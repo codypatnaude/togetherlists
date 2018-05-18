@@ -15,5 +15,18 @@
   "bugs": {
     "url": "https://github.com/codypatnaude/togetherlists/issues"
   },
-  "homepage": "https://github.com/codypatnaude/togetherlists#readme"
+  "homepage": "https://github.com/codypatnaude/togetherlists#readme",
+  "dependencies": {
+    "@types/node": "^10.1.1",
+    "@types/socket.io": "^1.4.33",
+    "body-parser": "^1.18.3",
+    "express": "^4.16.3",
+    "socket.io": "^2.1.1",
+    "uuid": "^3.2.1"
+  },
+  "devDependencies": {
+    "@types/body-parser": "^1.17.0",
+    "@types/express": "^4.11.1",
+    "@types/uuid": "^3.4.3"
+  }
 }
