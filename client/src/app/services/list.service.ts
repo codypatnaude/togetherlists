@@ -15,7 +15,7 @@ export class ListService {
 
   connect() {
     return new Promise((resolve, reject) => {
-      this.socketServer = io.connect('http://localhost:3000/lists');
+      this.socketServer = io.connect('/lists');
       
       this.socketServer.on('lists', (lists) => {
         console.log('got some lists');
