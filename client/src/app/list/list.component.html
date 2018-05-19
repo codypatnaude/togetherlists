@@ -1,0 +1,25 @@
+<div class="container">
+  <div class="list-header">
+    <select *ngIf="lists" class="form-control" [(ngModel)]="list">
+      <option *ngFor="let list of lists" [ngValue]="list">{{list.name}}</option>
+    </select>
+  </div>
+  <div class="list">
+    <ul *ngIf="list">
+      <li *ngFor="let item of list.items" class="item row">
+        <div class="item-name col-10">{{item.name}}</div>
+        <div class="col-2">
+          <input type="checkbox" [checked]="item.complete" class="form-control-lg" (change)="alterItemState(item)"/>
+        </div>
+      </li>
+    </ul>
+  </div>
+  <div class="list-input row">
+    <div class="col-10">
+        <input type="text" [(ngModel)]="newItemName" class="form-control-lg" style="width: 100%;">
+    </div>
+    <div class="col-2">
+      <button class="btn btn-lg btn-primary" (click)="addItem()">Add</button>
+    </div>
+  </div>
+</div>

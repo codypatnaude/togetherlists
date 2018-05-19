@@ -1,3 +1,3 @@
-export class ListRoom{
-  constructor(public id:string, public listId: number){}
+export class ListRoom {
+  constructor(public id: string, public listId: number) {}
 }

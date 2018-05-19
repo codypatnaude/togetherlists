@@ -10,7 +10,8 @@
     "install-client": "cd client && npm install",
     "install-server": "cd server && npm install",
     "install-app": "npm run install-server && npm run install-client",
-    "build-app": "npm run build-server && npm run build-client"
+    "build-app": "npm run build-server && npm run build-client",
+    "start": "node ./server/dist/server.js"
   },
   "repository": {
     "type": "git",
