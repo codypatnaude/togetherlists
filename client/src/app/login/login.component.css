@@ -4,8 +4,9 @@
   -moz-background-size: cover;
   -o-background-size: cover;
   background-size: cover;
-  height: 750px;
+  min-height: 95vh;
   padding-top: 50px;
+  padding-bottom: 50px;
 }
 
 .hero-text{
@@ -20,10 +21,10 @@
 }
 
 .panel{
-  border: 3px solid rgba(197, 197, 228, 0.4);
-  height: 300px;
+  border: 3px solid rgba(197, 197, 228, 0.6);
+  min-height: 300px;
   padding: 10px;
-  background-color:rgba(197, 197, 228, 0.4);
+  background-color:rgba(197, 197, 228, 0.6);
   border-radius: 10px;
   max-width: 300px;
   margin: auto;
@@ -31,4 +32,12 @@
 
 .panel-wrapper{
   margin-top: 50px;
+}
+
+p.join-text {
+  margin-bottom: 150px;
+}
+
+.panel-inner {
+  overflow: auto;
 }
