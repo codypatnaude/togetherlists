@@ -1,0 +1,34 @@
+#login-screen{
+  background: url('/public/img/together.jpg') no-repeat center;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+  height: 750px;
+  padding-top: 50px;
+}
+
+.hero-text{
+  margin: auto;
+  text-align: center;
+  font-family: "Open Sans", sans-serif;
+}
+
+.hero-text h1{
+  font-size: 46px;
+  font-weight: bold;
+}
+
+.panel{
+  border: 3px solid rgba(197, 197, 228, 0.4);
+  height: 300px;
+  padding: 10px;
+  background-color:rgba(197, 197, 228, 0.4);
+  border-radius: 10px;
+  max-width: 300px;
+  margin: auto;
+}
+
+.panel-wrapper{
+  margin-top: 50px;
+}

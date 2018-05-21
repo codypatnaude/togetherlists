@@ -1,0 +1,11 @@
+#header{
+  height: 40px;
+  background-color: #11055c;
+  padding: 10px;
+}
+
+#header h1{
+  font-family: "Open Sans";
+  color: white;
+  font-size: 20px;
+}

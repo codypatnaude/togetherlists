@@ -11,12 +11,17 @@ import * as mongoose from "mongoose";
 import {ListModel, IListModel} from "./models/list"
 
 mongoose.connect('mongodb://localhost/togetherlists')
-
+.then(
+  ()=>console.log('connected to mongo'),
+  (err)=>{throw err}
+)
+.catch((err)=>console.log(err))
 
 const app = express();
 
 app.use(bodyParser.json());
 app.use(bodyParser.urlencoded({ extended: false }));
+app.use('/public', express.static(path.join(__dirname, "../../public")));
 app.use(express.static(path.join(__dirname, "../../client/dist/client")));
 
 app.use("/api", api());
